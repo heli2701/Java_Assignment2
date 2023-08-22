@@ -1,0 +1,28 @@
+// WAP to explain the concept of Compile time Polymorephysm [Method Over Loading] in java
+
+import java.util.*;
+public class MetOvrLoad
+{
+	public static void main(String kk[])
+	{
+		
+		Scanner k =new Scanner(System.in);
+		MetOvrLoad m= new MetOvrLoad();
+		m.msg("Ram");
+	}
+	public void msg(String n)
+	{
+		System.out.println("hello"+n);
+	}
+	public void msg(String n,String city)
+	{
+		System.out.println("hello my name is "+n"I am from "+city);
+		
+	}
+	public void msg(String n,int marks)
+	{
+		System.out.println("hello my name is "+n"I have Scored "+marks+"persent");
+		
+	}
+	
+}
