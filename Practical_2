@@ -1,0 +1,33 @@
+// WAP to explain the runtime Polymorphism [Method Over Riding] in Java  
+
+// Teacher.java file 
+public  class Teacher
+{
+	public void intro(String name) 
+	{
+		
+		System.out.println("hello i am "+"I am Teacher");
+	}
+}
+
+// Student.java file
+public class Student extends Teacher
+{
+	public  void intro(String name)
+	{
+		
+		
+		System.out.println("hello i am "+"I am Student");
+	}
+}
+
+// Learn.java file
+public class Learn
+{
+	public static void main(String kk[])
+	{
+		
+		Teacher tt = new Student();
+		tt.intro("Heli");
+	}
+}
