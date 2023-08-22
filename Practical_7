@@ -1,0 +1,36 @@
+//WAP to search a name in the given array in java 
+
+import java.util.*;
+public class ArrSe
+{
+	public static void main(String mm[])
+	{
+		String names[]=new String[4]; // declaration of an array
+		String n;
+		Scanner k =new Scanner(System.in); // object creation
+			for(int i=0;i<names.length;i++)
+			{
+				System.out.print("Enter a name:");
+				names[i]=k.next();
+			}
+			System.out.print("Enter the name you want to search:");
+			n=k.next();
+			boolean check=false;
+			for(int i=0;i<names.length;i++)
+			{
+				if(names[i].equalsIgnoreCase(n))
+				{
+					
+					check=true;
+				}
+			}
+			if(check)
+				System.out.println("Name Found");
+			else
+				System.out.println("Name not Found");
+			
+			
+			
+			
+	}
+} 
