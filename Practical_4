@@ -1,0 +1,26 @@
+// WAP to explain the concept of Inheritance in java
+// Parent.java file
+public class Parent
+{
+	public static void greetMsg(String n)
+	{
+		System.out.println("Hello "+n+" welcome to parul");
+	}
+	public static void showInfo()
+	{
+		System.out.println("I am the method of perent class");
+	}
+}
+
+// child.java file
+
+public class Child extends Parent
+{
+	public static void main(String kk[])
+	{
+		//Parent.greetMsg("Heli");
+		//Parent.showInfo();
+		greetMsg("Heli");
+		showInfo();
+	}
+}
