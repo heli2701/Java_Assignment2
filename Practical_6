@@ -1,0 +1,31 @@
+//WAP to ask the user to enter a number print number in reverse order
+
+
+import java.util.*;
+public class RevNum
+{
+	public static void main(String kk[])
+	{
+		Scanner k = new Scanner(System.in);
+		int n;
+		
+		System.out.print("Enter a number:");
+		n=k.nextInt();
+		rev(n);
+		
+		
+		
+	}
+	public static void rev(int n){
+		if(n <10){
+			System.out.print(n);
+			return;
+		}else{
+			System.out.print(n%10);
+			rev(n/10);
+			
+			
+			
+		}
+	}
+}
