@@ -1,0 +1,46 @@
+// WAP to find the second-largest element and the third-largest element in the array
+
+import java.util.*;
+public class LarSec
+{
+	public static void main(String kk[])
+	{
+		Scanner k =new Scanner(System.in);
+		int data[]=new int[4];
+		for(int i=0;i<data.length;i++)
+		{
+			System.out.print("Enter the number:");
+			data[i]=k.nextInt();
+		}
+
+		int largest = data[0];
+		int secLar = data[1];
+		int thrLar = data[2];
+		//45,56,76,89
+		//l  s  t
+		for (int i = 0; i < data.length; i++) 
+		{
+			if (data[i] > largest) 
+			{	
+				thrLar = secLar;
+				secLar = largest;
+				largest = data[i];
+			} 
+			else if (data[i] >secLar ) 
+			{
+			 secLar = data[i];
+			
+			}
+			else if (data[i] > thrLar) 
+			{
+			thrLar = data[i];
+			}
+			
+		}
+		
+		System.out.println("Second largest element in array:"+secLar);
+		System.out.println("Third largest element in array:"+thrLar);
+    }
+  
+  
+}
