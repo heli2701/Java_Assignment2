@@ -1,0 +1,31 @@
+// WAP to check whether the number is perfect or not
+
+import java.util.*;
+public class Perfect//sum of all the facter of number exept the num if equal to the number it self so the number is perfect
+{
+	public static void main(String kk[])
+	{
+		int n;
+		Scanner k =new Scanner(System.in);
+		System.out.println("Enter a number to check:");
+		n=k.nextInt();
+		int sum=0;
+		for(int i=1;i<=n/2;i++)
+		{
+			if(n%i==0)  
+			{
+				sum=sum+i;
+			}
+		}
+		if(sum==n)
+		{
+			System.out.println("Number is Perfect number");
+		}
+		else
+			
+		{
+			System.out.println("Number is not  Perfect number");
+		}
+		
+	}
+}
