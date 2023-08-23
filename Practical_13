@@ -1,0 +1,35 @@
+// WAP to check whether the number is pelindrome or not
+
+import java.util.*;
+public class Npelin
+{
+	
+	public static void main(String kk[])
+	{
+		
+		int r,temp,sum=0,num;
+		Scanner k =new Scanner(System.in);
+		System.out.print("Enter the number:");
+		num=k.nextInt();
+		temp=num;
+		
+		while(num>0)
+		{
+			r = num%10;
+			sum=(sum*10)+r;
+			num=num/10;
+		}
+		if (temp==sum)
+		{
+			System.out.println("The number is pelindrome");
+		}
+		else
+		{
+			System.out.println("The number is not pelindrome");
+		
+		}
+		
+	}
+	
+	
+}
