@@ -1,0 +1,30 @@
+// WAP to count the nuber of names starting with vowels
+
+import java.util.*;
+public class CountVow
+{
+	public static void main(String kk[])
+	{
+		
+		Scanner k =new Scanner(System.in);
+		String data[]=new String[4];
+		for(int i=0;i<data.length;i++)
+		{
+			System.out.print("Enter the number:");
+			data[i]=k.next();
+			
+		}
+		int count=0;
+		for(int i=0;i<data.length;i++)
+		{
+			char c =data[i].charAt(0);
+			if (c == 'A' || c == 'E' ||c == 'I' ||c == 'O' ||c == 'U' ||c == 'a' ||c == 'e' ||c == 'i' || c == 'o' ||c == 'u' )
+			{
+				count++;
+			}
+			
+		}
+		System.out.println("The number of nanmes starting with vowels is "+count);
+		
+	}
+}
