@@ -1,0 +1,34 @@
+// WAP for Transpose of an matrix using array
+
+import java.util.*;
+public class ArrayTra
+{
+	public static void main(String kk[])
+	{
+		int sum=0;
+		Scanner k =new Scanner(System.in);
+		int data[][]=new int[2][2];
+		for(int i=0;i<2;i++)
+		{
+			for(int j=0;j<2;j++)
+			{
+				System.out.print("Enter the number:");
+				data[i][j]=k.nextInt();
+			}
+
+		}
+		System.out.println("Transpose of matrix is :");
+		System.out.println();
+		for(int i=0;i<2;i++)
+		{
+			for(int j=0;j<2;j++)
+			{
+				System.out.print(data[j][i]+" ");
+
+			}
+			System.out.println();
+		}
+
+
+	}
+}
