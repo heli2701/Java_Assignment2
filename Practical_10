@@ -1,0 +1,35 @@
+// WAP to to check whether the number is Duck number or not
+
+import java.util.*;
+public class Duck
+{
+	
+	public static void main(String kk[])
+	{
+		
+		int num;
+		Scanner k =new Scanner(System.in);
+		System.out.print("Enter the number:");
+		num=k.nextInt();
+		if(checkDuck(num))
+		{
+			System.out.println("the number"+num+" is duck");
+		}
+		else
+		{
+			System.out.println("the number"+num+" is not duck");
+		}
+			
+	}
+	public static boolean checkDuck(int number)
+	{
+		while(number!=0)
+		{
+			if(number%10 ==0)
+				return true;
+			
+		  number=number/10;
+		}
+		return false;
+	}
+}
