@@ -1,0 +1,17 @@
+//WAP to generate the fibniacci series
+
+public class Fib {
+  public static void main(String[] kk) {
+
+    int n = 10, t1 = 0, t2 = 1;
+    System.out.println("Fibonacci Series till " + n + " terms:");
+
+    for (int i = 1; i <= n; ++i) {
+      System.out.print(firstTerm + ", ");
+
+    int t3 = t1 + t2;
+      t1 = t2;
+      t2 = t3;
+    }
+  }
+}
